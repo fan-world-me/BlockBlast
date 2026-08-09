@@ -1,0 +1,65 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Logica</string>
+
+    <!-- Home Screen -->
+    <string name="play">Бозӣ кардан</string>
+    <string name="continue_game">Давом додан</string>
+    <string name="new_game">Бозии нав</string>
+    <string name="best_score_label">Беҳтарин хол</string>
+    <string name="home_tagline">Муаммои ороми хурд</string>
+
+    <!-- Game Screen -->
+    <string name="score">Хол</string>
+    <string name="best">Рекорд</string>
+    <string name="game_over">Бозӣ анҷом ёфт</string>
+    <string name="game_over_subtitle">Дар тахта қадам намондааст</string>
+    <string name="new_best">Рекорди нав</string>
+    <string name="revive">Давом додан</string>
+    <string name="restart">Бозии нав</string>
+    <string name="exit_to_home">Баромад</string>
+    <string name="cd_settings">Танзимот</string>
+    <string name="cd_back">Қафо</string>
+    <string name="cd_close">Пӯшидан</string>
+    <string name="cd_advertisement">Таблиғ</string>
+
+    <!-- Settings -->
+    <string name="settings">Танзимот</string>
+    <string name="sound">Овоз</string>
+    <string name="sound_subtitle">Эффектҳои овозии бозӣ</string>
+    <string name="music">Мусиқӣ</string>
+    <string name="music_subtitle">Мусиқии заминавӣ</string>
+    <string name="sfx">Эффектҳои савтӣ</string>
+    <string name="sfx_subtitle">Ҷойгиркунӣ, тозакунӣ ва хатҳои овозӣ</string>
+    <string name="vibration">Ларзиш</string>
+    <string name="vibration_subtitle">Алоқаи тактилӣ ҳангоми ҷойгиркунӣ</string>
+    <string name="dark_theme">Мавзӯи торик</string>
+    <string name="dark_theme_subtitle">Ҳамеша режими торик</string>
+    <string name="privacy_policy">Сиёсати махфият</string>
+    <string name="privacy_policy_subtitle">Чӣ тавр мо маълумоти шуморо коркард мекунем</string>
+    <string name="more">Бештар</string>
+    <string name="more_subtitle">Махфият, коди манбаъ, китобхонаҳо</string>
+    <string name="github">GitHub</string>
+    <string name="github_subtitle">Дидани коди манбаъ</string>
+    <string name="open_source_libraries">Китобхонаҳои кушодаасос</string>
+    <string name="open_source_libraries_subtitle">Эътирофҳо ва ташаккур</string>
+
+    <!-- Common -->
+    <string name="exit">Баромад</string>
+
+    <!-- Feedback Popups -->
+    <string name="feedback_good">Хуб</string>
+    <string name="feedback_great">Офарин!</string>
+    <string name="feedback_excellent">Беҳтарин!</string>
+    <string name="feedback_unbelievable">Боваринашаванда!</string>
+    <string name="feedback_combo">Комбо</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_grid_title">Дар тахта ҷойгир кунед</string>
+
+    <!-- Review Prompt -->
+    <string name="review_prompt_title">Logica-ро дӯст медоред?</string>
+    <string name="review_prompt_body">Баҳои шумо ба бозигарони дигари муаммо кӯмак мекунад, ки бозиро пайдо кунанд.</string>
+    <string name="review_prompt_leave_feedback">Фикр гузоштан</string>
+    <string name="review_prompt_dont_show">Дигар нишон надиҳед</string>
+</resources>
