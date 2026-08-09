@@ -26,7 +26,6 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.arkivanov.decompose.extensions.compose.subscribeAsState
 import ge.yet.blockblast.feature.game.result.GameResultComponent
-import ge.yet3.blokblast.ads.rememberGameOverInterstitial
 import ge.yet3.blokblast.component.background.AmbientMeshBackground
 import ge.yet3.blokblast.component.sheet.ClaudeBottomSheet
 import ge.yet3.blokblast.screen.game.GameGrid
@@ -51,13 +50,14 @@ fun GameResultContent(
 ) {
     val model by component.model.subscribeAsState()
     val reviewPrompt by component.reviewPrompt.subscribeAsState()
-    val interstitial = rememberGameOverInterstitial()
     val reducedMotion = rememberReducedMotion()
 
     GameResultContent(
         model = model,
         onPrimaryClicked = {
-            component.onPrimaryClicked(interstitial.show)
+            component.onPrimaryClicked { onApproved ->
+                onApproved()
+            }
         },
         onHomeClicked = component::onHomeClicked,
         reducedMotion = reducedMotion,

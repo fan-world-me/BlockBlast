@@ -4,7 +4,7 @@
 
 A modern, cross-platform block puzzle game built with **Kotlin Multiplatform** and **Compose Multiplatform**, sharing code between Android and iOS.
 
-Original project by **yet300**. Modifications and maintenance by **fan_world_me**.
+Original project by **fan_world_me**. Modifications and maintenance by **fan_world_me**.
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.3.21-blue.svg)
 ![Compose](https://img.shields.io/badge/Compose-1.10.3-green.svg)
@@ -42,7 +42,6 @@ Original project by **yet300**. Modifications and maintenance by **fan_world_me*
 - **Kotlinx Coroutines / Serialization / Datetime**
 - **Multiplatform Settings** — cross-platform key/value storage
 - **Firebase** (GitLive SDK) — Analytics, Crashlytics
-- **Google Mobile Ads** + **User Messaging Platform** (Android)
 - **ConfettiKit** — celebratory effects
 - **Baseline Profiles** — Android startup performance
 
@@ -105,14 +104,6 @@ Open `iosApp/iosApp.xcodeproj` in Xcode and run.
 ## Contributing
 
 Contributions are welcome! Feel free to open an issue or submit a PR.
-
-## Support Me
-- **ton**: UQCi1XMdZP2fBfTK-O6rsAX3fXEm5iBpjO1D6FDekdUDQnaw
-- **btc**: bc1qv2m03vg23227yfnlu0c0jx2ps5yg8v8kvy748s
-- **eth**: 0xdF196759E996Fe684c33416282F30d6B9A0b325e
-- **usdt(erc20)**: 0xdF196759E996Fe684c33416282F30d6B9A0b325e
-- **bnb**: 0xdF196759E996Fe684c33416282F30d6B9A0b325e
-- **usdt(trc20)**: TYrBMc4yN4k8im2Qq2G17hv9VdmcYFngpT
 
 ## License
 

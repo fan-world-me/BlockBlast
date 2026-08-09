@@ -12,10 +12,7 @@ struct iOSApp: App {
         WindowGroup {
             ComposeView(
                 root: appDelegate.root,
-                backDispatcher: appDelegate.backDispatcher,
-                onFirstVisible: { presenter in
-                    appDelegate.startConsentFlow(from: presenter)
-                }
+                backDispatcher: appDelegate.backDispatcher
             )
                 .ignoresSafeArea(.all)
         }
@@ -33,27 +30,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
-        // Wire the Kotlin ad bridge up-front; banner creation works even
-        // before an ad request fires. Google Mobile Ads is started *inside*
-        // initialising earlier would violate UMP's GDPR requirements.
         FirebaseApp.configure()
-        Task { @MainActor in
-            AdCoordinator.shared.configureBridge()
-        }
         return true
-    }
-
-    @MainActor
-    func startConsentFlow(from presenter: UIViewController) {
-        IosAdBridge.shared.requestConsentAndAds = { [weak self, weak presenter] in
-            guard let self, let presenter else { return }
-            self.startConsentFlow(from: presenter)
-        }
-            // Ads may now be requested — preload the game-over interstitial.
-            Task { @MainActor in
-                await AdCoordinator.shared.loadInterstitial()
-            }
-        }
     }
 
     lazy var root: RootComponent = {

@@ -52,7 +52,6 @@ import blockblast.composeapp.generated.resources.cd_settings
 import blockblast.composeapp.generated.resources.score
 import com.arkivanov.decompose.extensions.compose.subscribeAsState
 import ge.yet.blockblast.feature.game.GameComponent
-import ge.yet3.blokblast.ads.AdBanner
 import ge.yet3.blokblast.component.background.AmbientMeshBackground
 import ge.yet3.blokblast.component.button.IconCircleButton
 import ge.yet3.blokblast.component.icon.ArrowBack
@@ -403,7 +402,6 @@ fun BlockBlastGameContent(component: GameComponent) {
                 contentAlignment = Alignment.Center,
             ) {
                 if (!hideBanner) {
-                    AdBanner(modifier = Modifier.fillMaxWidth())
                 }
             }
 

@@ -11,7 +11,6 @@
 		D4103FE72F936FE900DFEF5D /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D4103FE62F936FE900DFEF5D /* FirebaseCore */; };
 		D4103FE92F936FE900DFEF5D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D4103FE82F936FE900DFEF5D /* FirebaseCrashlytics */; };
 		D4858AF32F97B41F00DE4B41 /* GoogleUserMessagingPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = D4858AF22F97B41F00DE4B41 /* GoogleUserMessagingPlatform */; };
-		D4C179142F9267B80057A6F8 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = D4C179132F9267B80057A6F8 /* GoogleMobileAds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +52,6 @@
 				D4858AF32F97B41F00DE4B41 /* GoogleUserMessagingPlatform in Frameworks */,
 				D4103FE92F936FE900DFEF5D /* FirebaseCrashlytics in Frameworks */,
 				D4103FE72F936FE900DFEF5D /* FirebaseCore in Frameworks */,
-				D4C179142F9267B80057A6F8 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +105,6 @@
 			);
 			name = iosApp;
 			packageProductDependencies = (
-				D4C179132F9267B80057A6F8 /* GoogleMobileAds */,
 				D4103FE42F936FE900DFEF5D /* FirebaseAnalytics */,
 				D4103FE62F936FE900DFEF5D /* FirebaseCore */,
 				D4103FE82F936FE900DFEF5D /* FirebaseCrashlytics */,
@@ -474,10 +471,8 @@
 			package = D4858AF12F97B41F00DE4B41 /* XCRemoteSwiftPackageReference "swift-package-manager-google-user-messaging-platform" */;
 			productName = GoogleUserMessagingPlatform;
 		};
-		D4C179132F9267B80057A6F8 /* GoogleMobileAds */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D4C179122F9267B80057A6F8 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
-			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
